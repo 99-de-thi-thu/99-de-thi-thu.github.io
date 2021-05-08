@@ -1,0 +1,18 @@
+
+@media only screen  and (min-width:1170px){
+
+    .dap_an_A{position: relative;margin-left: 30px;}
+    .dap_an_B{position: relative;margin-left: 30px;}
+    .dap_an_C{position: relative;margin-left: 30px;}
+    .dap_an_D{position: relative;margin-left: 30px;}
+
+}
+
+
+/* Small phones to small tablets 0px- 600px*/
+@media only screen and (max-width: 600px){
+    .dap_an_A{position: relative;left: 30px;}
+    .dap_an_B{position: relative;left: 60px;}
+    .dap_an_C{position: relative;left: 90px;}
+    .dap_an_D{position: relative;left: 120px;}
+}
