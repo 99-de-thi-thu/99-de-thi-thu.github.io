@@ -6,6 +6,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./resources/css/danh-sach-de.styles.css">
+
+<script src="./resources/js/20-de-toan-penbook.data.js"></script>
+<script src="./resources/js/danh-sach-de.scripts.js"></script>
+
 <style>
     body,
     h1,
@@ -26,12 +32,13 @@
             <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
                 <i class="fa fa-remove"></i>
             </a>
-            <img src="./resources/img/logo-website.png" style="width:45%;" class="w3-round"><br><br>
-            <h4><b>Các Môn Học</b></h4>
+            <img src="./resources/img/avatar_g.jpg" style="width:45%;" class="w3-round"><br><br>
+            <h4><b>Môn Toán</b></h4>
+            <p class="w3-text-grey">Template by W3.CSS</p>
         </div>
         <div class="w3-bar-block">
-            <a href="https://www.facebook.com/profile.php?id=100011316454808" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
-          class="fa fa-th-large fa-fw w3-margin-right"></i>Facebook</a>
+            <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
             <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
           class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
@@ -45,7 +52,6 @@
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
-        <p class="w3-text-grey w3-container">Template by W3.CSS</p>
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -56,44 +62,50 @@
 
         <!-- Header -->
         <header id="portfolio">
-            <a href="#"><img src="./resources/img/logo-website.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <a href="#"><img src="./resources/img/avatar_g.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
             <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
           class="fa fa-bars"></i></span>
             <div class="w3-container">
-                <h1><b>Các Môn Học</b></h1>
+                <h1><b>Môn Toán</b></h1>
             </div>
         </header>
 
         <!-- First Photo Grid-->
         <div class="w3-row-padding">
-            <!-- block môn lịch sử-->
-            <a href="./danh-sach-de-lich-su.html" style="text-decoration: none;">
+            <a id="position_1" href="./de-toan/de-toan-penbook-2021-so-1.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-lichsu.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 1</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn Lịch Sử</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
             </a>
 
-            <!-- block môn tiếng anh-->
-            <a href="./danh-sach-de-tieng-anh.html" style="text-decoration: none;">
+            <a id="position_2" href="./de-toan/de-toan-penbook-2021-so-2.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-english.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 1</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn Tiếng Anh</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
             </a>
 
-            <!-- block môn gdcd-->
-            <a href="./danh-sach-de-gdcd.html" style="text-decoration: none;">
+            <a id="position_3" href="./de-toan/de-toan-penbook-2021-so-3.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-gdcd.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 1</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn GDCD</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
@@ -102,74 +114,107 @@
 
         <!-- Second Photo Grid-->
         <div class="w3-row-padding">
-            <!-- block môn toán-->
-            <a href="./danh-sach-de-toan.html" style="text-decoration: none;">
+            <a id="position_4" href="./de-toan/de-toan-penbook-2021-so-4.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-toan.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 4</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn Toán</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
             </a>
 
-            <!-- block môn vật lý-->
-            <a href="./danh-sach-de-vat-ly.html" style="text-decoration: none;">
+            <a id="position_5" href="./de-toan/de-toan-penbook-2021-so-5.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-vatly.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 5</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn Vật Lý</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
             </a>
 
-            <!-- block môn hóa học-->
-            <a href="./danh-sach-de-hoa-hoc.html" style="text-decoration: none;">
+            <a id="position_6" href="./de-toan/de-toan-penbook-2021-so-6.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-hoahoc.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 1</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn Hóa Học</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
             </a>
-
         </div>
 
         <!-- Third Photo Grid-->
         <div class="w3-row-padding">
-            <!-- block môn địa lý-->
-            <a href="./danh-sach-de-dia-ly.html" style="text-decoration: none;">
+            <a id="position_7" href="./de-toan/de-toan-penbook-2021-so-7.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-dialy.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 1</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn Địa Lý</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
             </a>
 
-            <!-- block môn sinh học-->
-            <a href="./danh-sach-de-sinh-hoc.html" style="text-decoration: none;">
+            <a id="position_8" href="./de-toan/de-toan-penbook-2021-so-8.html">
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="./resources/img/logo-sinhhoc.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 1</div>
+                    </div>
                     <div class="w3-container w3-white">
-                        <p><b>Môn Sinh Học</b></p>
+                        <p><b>Lorem Ipsum</b></p>
                         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     </div>
                 </div>
             </a>
 
+            <a id="position_9" href="./de-toan/de-toan-penbook-2021-so-9.html">
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <div class="container">
+                        <img src="./resources/img/img_1.jpg" alt="Snow" style="width:100%; filter: blur(1px);" class="w3-hover-opacity">
+                        <div class="centered">Đề Thi Thử Số 1</div>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p><b>Lorem Ipsum</b></p>
+                        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <button onclick="" class="w3-bar-item w3-button w3-hover-black">«</button>
+                <button onclick="pagination(1, de_toan_penbook)" class="w3-bar-item w3-button w3-hover-black">1</button>
+                <button onclick="pagination(2, de_toan_penbook)" class="w3-bar-item w3-button w3-hover-black">2</button>
+                <button onclick="" class="w3-bar-item w3-button w3-hover-black">3</button>
+                <button onclick="" class="w3-bar-item w3-button w3-hover-black">4</button>
+                <button onclick="" class="w3-bar-item w3-button w3-hover-black">»</button>
+            </div>
         </div>
 
         <!-- Images of Me -->
         <div class="w3-row-padding w3-padding-16" id="about">
             <div class="w3-col m6">
-                <img src="./resources/img/logo-website.png" alt="Me" style="width:100%">
+                <img src="./resources/img/avatar_g.jpg" alt="Me" style="width:100%">
             </div>
             <div class="w3-col m6">
-                <img src="./resources/img/logo-website.png" alt="Me" style="width:100%">
+                <img src="./resources/img/avatar_g.jpg" alt="Me" style="width:100%">
             </div>
         </div>
 
@@ -185,8 +230,8 @@
         <footer class="w3-container w3-padding-32 w3-dark-grey">
             <div class="w3-row-padding">
                 <div class="w3-third">
-                    <h3>Donate</h3>
-                    <p>Ủng hộ mình và nhóm phát triển <a href="./huong-dan-donate.html" style="color: yellowgreen;">tại đây</a></p>
+                    <h3>FOOTER</h3>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
                 </div>
 
@@ -194,14 +239,14 @@
                     <h3>BLOG POSTS</h3>
                     <ul class="w3-ul w3-hoverable">
                         <li class="w3-padding-16">
-                            <a href="https://www.facebook.com/profile.php?id=100011316454808"><img src="./resources/img/logo-website.png" class="w3-left w3-margin-right" style="width:50px"></a>
-                            <span class="w3-large">facebook</span><br>
-                            <span>Tài khoản facebook</span>
+                            <img src="./resources/img/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Lorem</span><br>
+                            <span>Sed mattis nunc</span>
                         </li>
                         <li class="w3-padding-16">
-                            <a href="https://luyen-de-thi-thu.blogspot.com/2021/04/e-kscl-toan-12-nam-2019-2020-lan-3.html"><img src="./resources/img/logo-website.png" class="w3-left w3-margin-right" style="width:50px"></a>
-                            <span class="w3-large">blogspot</span><br>
-                            <span>Địa chỉ blogspot</span>
+                            <img src="./resources/img/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Ipsum</span><br>
+                            <span>Praes tinci sed</span>
                         </li>
                     </ul>
                 </div>
@@ -209,7 +254,7 @@
                 <div class="w3-third">
                     <h3>POPULAR TAGS</h3>
                     <p>
-                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Đề toán PenBook</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+                        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
