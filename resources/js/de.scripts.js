@@ -1,1 +1,76 @@
-function hien_dap_an(a,b){dap_an_dung=b[a-1][2];var c=0;for(c=0;c<dap_an_dung.length;c++)document.getElementById("cau_"+String(c+1)+"_dap_an_"+dap_an_dung[c]).style.background="blue"}function kiem_tra(a,b){dap_an_dung=b[a-1][2],w3.hide("#xac_nhan_nop_bai"),w3.show("#hien_dap_an"),w3.hide("#quay_lai");var c=0,d=0;for(d=0;d<dap_an_dung.length;d++)dap_an_nguoi_choi_chon[d]==dap_an_dung[d]&&(c+=1),document.getElementById("cau_"+String(d+1)+"_dap_an_"+dap_an_dung[d]).style.background="blue";document.getElementById("diem_thi").innerHTML="\u0110i\u1ec3m: "+String(.2*c),nop_bai=1}function click_dap_an(a,b){dap_an_nguoi_choi_chon[parseInt(b)-1]==a?(document.getElementById("cau_"+b+"_dap_an_"+a).style.background="white",dap_an_nguoi_choi_chon[parseInt(b)-1]="f"):("f"!=dap_an_nguoi_choi_chon[parseInt(b)-1]&&(document.getElementById("cau_"+b+"_dap_an_"+dap_an_nguoi_choi_chon[parseInt(b)-1]).style.background="white"),document.getElementById("cau_"+b+"_dap_an_"+a).style.background="pink",dap_an_nguoi_choi_chon[parseInt(b)-1]=a)}function nop_bai_thi(){w3.hide("#nop_bai_thi"),w3.show("#xac_nhan_nop_bai"),w3.show("#quay_lai")}function quay_lai(){w3.hide("#xac_nhan_nop_bai"),w3.hide("#quay_lai"),w3.show("#nop_bai_thi")}function baogio(){num=document.the_form.kq.value,phut=document.the_form.kq2.value,num=eval(num)+1,60==num&&(phut=eval(phut)+1,num=0),document.the_form.kq.value=num,document.the_form.kq2.value=phut,0==nop_bai&&(hengio=setTimeout("baogio();",1e3))}function bat_dau_thi(){w3.hide("#bat_dau_thi"),baogio()}var nop_bai=0;
+//============================================================================================================
+//script cho phần chấm điểm
+
+function hien_dap_an(de, data) {
+    dap_an_dung = data[de - 1]
+    var i = 0;
+    for (i = 0; i < dap_an_dung['length']; i++) {
+        document.getElementById('cau_' + String(i + 1) + '_dap_an_' + dap_an_dung[i]).style.background = 'blue';
+    }
+}
+
+function kiem_tra(de, data) {
+    dap_an_dung = data[de - 1]
+    w3.hide("#xac_nhan_nop_bai");
+    w3.show("#hien_dap_an")
+    w3.hide("#quay_lai");
+    var diem = 0.0;
+    var i = 0;
+    for (i = 0; i < dap_an_dung['length']; i++) {
+        if (dap_an_nguoi_choi_chon[i] == dap_an_dung[i]) {
+            diem = diem + 1;
+        }
+        document.getElementById('cau_' + String(i + 1) + '_dap_an_' + dap_an_dung[i]).style.background = 'blue';
+    }
+    document.getElementById('diem_thi').innerHTML = "Điểm: " + String(diem * 10 / dap_an_dung['length'])
+    nop_bai = 1
+}
+
+function click_dap_an(dap_an_vua_click, cau) {
+    if (dap_an_nguoi_choi_chon[parseInt(cau) - 1] == dap_an_vua_click) {
+        document.getElementById('cau_' + cau + '_dap_an_' + dap_an_vua_click).style.background = 'white';
+        dap_an_nguoi_choi_chon[parseInt(cau) - 1] = "f";
+    } else {
+        if (dap_an_nguoi_choi_chon[parseInt(cau) - 1] != "f") { document.getElementById('cau_' + cau + '_dap_an_' + dap_an_nguoi_choi_chon[parseInt(cau) - 1]).style.background = 'white'; }
+        document.getElementById('cau_' + cau + '_dap_an_' + dap_an_vua_click).style.background = 'pink';
+        dap_an_nguoi_choi_chon[parseInt(cau) - 1] = dap_an_vua_click;
+    }
+}
+
+function nop_bai_thi() {
+    w3.hide("#nop_bai_thi");
+    w3.show("#xac_nhan_nop_bai");
+    w3.show("#quay_lai");
+}
+
+function quay_lai() {
+    w3.hide("#xac_nhan_nop_bai");
+    w3.hide("#quay_lai");
+    w3.show("#nop_bai_thi");
+}
+//===============================================================================================================
+// script cho đồng hồ bấm thời gian 50 phút
+var nop_bai = 0
+
+function baogio() {
+    num = document.the_form.kq.value;
+    phut = document.the_form.kq2.value;
+    num = eval(num) + 1;
+
+    if (num == 60) {
+        phut = eval(phut) + 1;
+        num = 0;
+    }
+    document.the_form.kq.value = num;
+    document.the_form.kq2.value = phut;
+    if (nop_bai == 0) {
+        hengio = setTimeout("baogio();", 1000);
+    }
+
+}
+
+function bat_dau_thi() {
+    //thoi_gian là thời gian làm đề thi
+    w3.hide("#bat_dau_thi")
+    baogio()
+}
